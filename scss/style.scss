@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'BariolRegular';
+	src: url('../fonts/BariolRegu.lfonts/ar.eot');
+	src: local('BariolRegular'), url('../fonts/BariolRegular.woff') format('woff'), url('../fonts/BariolRegular.ttf') format('truetype');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+@import 'reset';
+
+header{
+	padding: 45px 0 330px;
+	background:url(../img/top-img.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	.logo{
+		position: absolute;
+		left: 0;
+		a{
+			display: block;
+			background:url(../img/logo.png) center center no-repeat;
+			width: 255px;
+			height: 44px;
+		}
+	}
+	nav{
+		clear: both;
+		margin: 0 auto;
+		text-align: center;
+		padding: 14px 0;
+		.main-menu{
+			li{
+				display: inline-block;
+				a{
+					margin: 0 15px;
+					text-transform: uppercase;
+					font-size: 13px;
+					font-weight: normal;
+					color: #fff;
+					text-decoration: none;
+					font-family: 'BariolRegular';
+					&.active{font-weight: bold;}
+				}
+			}
+		}
+	}
+	h4{
+		font-size: 35px;
+		color: #fff;
+		text-align: center;
+		margin: 250px auto 65px;
+		text-transform: uppercase;
+		font-family: 'BariolRegular';
+	}
+	.link-wrap{
+		text-align: center;
+		.head-link{
+			display: inline-block;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 25px 40px;
+			border-radius: 5px;
+			color:#fff;
+			text-decoration: none;
+			border:2px solid #fff;
+			font-family: 'BariolRegular';
+			&.or{
+				font-style: italic;
+				text-transform: none;
+				border:0;
+				padding: 25px 15px;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+.content{
+	width: 60%;
+	margin: 0 auto;
+	padding: 85px 0 130px;
+	h5{
+		font-size: 22px;
+		color: #c2c1b1;
+		padding-bottom: 80px;
+		text-align: center;
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-weight: lighter;
+		&:after{
+			position: absolute;
+			content:'';
+			display: block;
+			width: 36px;
+			height: 1px;
+			background:#c2c1b1;
+			left: 50%;
+			margin-left: -18px;
+			top: 60px;
+		}
+	}
+	p{
+		&.ttl{
+			font-family: 'Lora';
+			font-size: 20px;
+			text-align: center;
+			line-height: 1.5;
+		}
+	}
+	.column-txt{
+		padding-top: 50px;
+		li{
+			display: inline-block;
+			width: 48%;
+			vertical-align: top;
+			&:first-child{
+				margin-right: 3%;
+			}
+			p{
+				line-height: 1.4;
+				text-align: justify;
+			}
+		}
+	}
+}
